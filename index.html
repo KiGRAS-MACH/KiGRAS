@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+        content="KiGRAS: Kinematic-Driven Generative Model for Realistic Agent Simulation">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nerfies: Deformable Neural Radiance Fields</title>
@@ -128,12 +128,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Trajectory generation is a pivotal task in autonomous driving and is essential for motion prediction, motion planning, and agent simulation. Recently, the autoregressive paradigm is opened a new frontier in this field, with the task definition of state transition closely mirroring the trajectory generation process. However, its potential is limited by the ineffective representation of realistic trajectories in the redundant state space.
-To address this limitation, we propose the Kinematic-Driven Generative Model for Realistic Agent Simulation (KiGRAS). Instead of modeling in the state space, KiGRAS factorizes the overall driving process into action probability distributions at each time step, providing a compact space to represent realistic driving patterns. By establishing physical causality from actions (cause) to trajectories (effect) through the kinematic model, KiGRAS eliminates massive redundant trajectories.
-All states derived from actions in the cause space are constrained to be physically feasible.
-Furthermore, redundant trajectories representing identical action sequences are mapped to the same representation, reflecting their underlying actions.
-This approach significantly reduces task complexity and ensures physical feasibility.
-KiGRAS achieves state-of-the-art performance in Waymo's SimAgents Challenge, ranking first on the WOMD leaderboard with significantly fewer parameters than other models.
+            Trajectory generation is a pivotal task in autonomous driving. Recent studies have introduced the autoregressive paradigm, leveraging the state transition model to approximate future trajectory distributions. This paradigm closely mirrors the real-world trajectory generation process and has achieved notable success. However, its potential is limited by the ineffective representation of realistic trajectories within the redundant state space. To address this limitation, we propose the Kinematic-Driven Generative Model for Realistic Agent Simulation (KiGRAS). Instead of modeling in the state space, KiGRAS factorizes the driving scene into action probability distributions at each time step, providing a compact space to represent realistic driving patterns. By establishing physical causality from actions (cause) to trajectories (effect) through the kinematic model, KiGRAS eliminates massive redundant trajectories. All states derived from actions in the cause space are constrained to be physically feasible. Furthermore, redundant trajectories representing identical action sequences are mapped to the same representation, reflecting their underlying actions. This approach significantly reduces task complexity and ensures physical feasibility. KiGRAS achieves state-of-the-art performance in Waymo's SimAgents Challenge, ranking first on the WOMD leaderboard with significantly fewer parameters than other models. The video documentation is available at \url{https://kigras-mach.github.io/KiGRAS/}.
           </p>
         </div>
       </div>
